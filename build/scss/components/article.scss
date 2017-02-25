@@ -1,0 +1,243 @@
+.main-header_article-bg {
+	min-height: 570px;
+	background-image: url(../img/article-bg.jpg);
+}
+.main-article__category {
+	margin: 120px 0 0 180px;
+	font-size: 10px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: $accent-color;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.main-article__title {
+	margin: 0 180px 0 180px;
+	color: #fff;
+	h1 {
+		margin: 0;
+		font-size: 52px;
+		text-transform: none;
+		font-weight: 500;
+		line-height: 62px;
+	}
+	b {
+		font-weight: 700;
+	}
+}
+.main-article {
+	padding: 60px 0 80px 0;
+} 
+.main-article__wrapper {
+	@extend .container;
+	@extend .clearfix;
+}
+.main-article__author {
+	float: left;
+	padding: 0 0 0 80px;
+}
+
+.main-article__author-title {
+	
+	font-size: 13px;
+	line-height: 24px;
+	color: #555;
+	font-weight: 600;
+}
+.main-article__author-name {
+	position: relative;
+	color: #111;
+	padding: 0 0 20px 0;
+	font-weight: 700;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: #eee;
+	}
+}
+.main-article__author-sicial {
+	padding: 30px 0 0 0;
+	a {
+		display: inline-block;
+		vertical-align: top;
+		width: 30px;
+		height: 30px;
+		margin: 0 20px 0 0;
+		line-height: 30px;
+		text-align: center;
+		color: #ccc;
+		text-decoration: none;
+		border-radius: 50%;
+		border: 2px solid #ccc;
+		transition: color .5s ease, border-color .5s ease;
+	}
+	.fb {
+		&:hover, &:active, &:focus {
+			color: #4c68b3;
+			border-color: #4c68b3;
+		}
+	}
+	.tw {
+		&:hover, &:active, &:focus {
+			color: #00abed;
+			border-color: #00abed;
+		}
+	}
+	.g {
+		&:hover, &:active, &:focus {
+			color: #d73d32;
+			border-color: #d73d32;
+		}
+	}
+}
+.main-article__text {
+	padding: 0 285px 40px 285px;
+	p {
+		font-size: 16px;
+		line-height: 34px;
+	}
+}
+.main-article__quote {
+	text-align: center;
+	padding: 0 285px 40px 285px;
+}
+.main-article__quote-top {
+	margin: 0 0 40px 0;
+	font-size: 42px;
+	color: $accent-color;
+}
+.main-article__quote-bott {
+	margin: 40px 0 0 0;
+	font-size: 42px;
+	color: $accent-color;
+}
+.main-article__quote-text {
+	font-size: 30px;
+	font-weight: 800;
+	font-style: italic;
+}
+.main-article__img {
+	margin: 0 0 40px 0;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.main-article__text-title {
+	padding: 0 285px 40px 285px;
+	h2 {
+		margin: 0;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+		text-transform: none;
+	}
+}
+.main-article__share {
+	padding: 0 285px 40px 285px;
+}
+.main-article__share-title {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 50px 0 0;
+	font-size: 10px;
+	line-height: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.main-article__share-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 7px 9px;
+	margin: 0 30px 0 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 600;
+	font-family: Arial, sans-serif;
+	border-radius: 5px;
+	transition: opacity .5s ease;
+	&:hover, &:active, &:focus {
+		opacity: .8;
+	}
+	i {
+		margin: 0 15px 0 0;
+	}
+}
+.main-article__share-item.fb {
+	background-color: #4c68b3;
+}
+.main-article__share-item.tw {
+	background-color: #00abed;
+}
+.main-article__share-item.g {
+	background-color: #d73d32;
+}
+.main-article__comments {
+	padding: 0 255px 40px 235px;
+}
+.main-article__comments-title {
+	padding: 0 0 25px 50px;
+	font-size: 14px;
+	color: #535353;
+	position: relative;
+	font-weight: 600;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 30px;
+		right: 30px;
+		height: 1px;
+		background-color: #eee;
+	}
+}
+.main-article__comments-add {
+	padding: 30px 0 30px 50px;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 30px;
+		right: 30px;
+		height: 1px;
+		background-color: #eee;
+	}
+
+}
+.main-article__comments-add-img {
+	float: left;
+	margin: 0 30px 0 0;
+	img {
+		border-radius: 50%;
+	}
+}
+.main-article__comments-add-form {
+	textarea {
+		border: none;
+		outline: none;
+		width: 460px;
+		resize: none;
+	}
+	textarea::-webkit-input-placeholder {color:#535353;}
+	textarea::-moz-placeholder          {color:#535353;}/* Firefox 19+ */
+	textarea:-moz-placeholder           {color:#535353;}/* Firefox 18- */
+	textarea:-ms-input-placeholder      {color:#535353;}
+	button {
+		display: inline-block;
+		padding: 5px 8px;
+		border-radius: 5px;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		color: #fff;
+		background-color: $main-color;
+		font-weight: 600;
+	}
+}

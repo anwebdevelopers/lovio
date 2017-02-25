@@ -1,0 +1,244 @@
+.news-main {
+	padding: 80px 0 110px 0;
+}
+.news__wrapper {
+	@extend .container;
+}
+.news__title {
+	text-align: center;
+	margin:  0 0 40px 0;
+	h1 {
+		margin: 0;
+		font-size: 36px;
+		line-height: 52px;
+		font-weight: 800;
+		text-transform: none;
+		color: #535353;
+	}
+}
+.news__box {
+	@extend .clearfix;
+	max-width: 864px;
+	margin: 0 auto 30px auto;
+}
+.news__item-small {
+	float: left;
+	display: block;
+	max-width: 270px;
+	min-height: 340px;
+	margin: 20px 9px;
+	box-shadow: 0 0 20px 0 $shadow;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #111;
+	transition: box-shadow .5s ease;
+	&:hover {
+		box-shadow: 0 0 30px 5px darken($shadow, 20%);
+	}
+}
+.news__item-small-img {
+	margin: 0 0 10px 0;
+
+
+	img {
+		width: 100%;
+		height: 230px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+}
+.news__item-small-category {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+	color: $accent-color;
+}
+.color_blue {
+	color: $main-color;
+}
+.color_gray {
+	color: #58717b;
+}
+.news__item-small-comment {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 20px;
+	color: #aaa;
+}
+.news__item-small-date {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 10px;
+	color: #aaa;
+	font-family: Arial, sans-serif;
+}
+.news__item-small-title {
+	padding: 10px 20px 20px 20px;
+	h4 {
+		margin: 0;
+		text-transform: none;
+		font-weight: 700;
+	}
+	p {
+		font-size: 10px;
+		color: #ccc;
+	}
+}
+.interview {
+	text-align: center;
+	width: 270px;
+
+}
+.interview__title {
+	position: relative;
+	margin: 10px 0 30px 0;
+	h4 {
+		margin: 0;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: $main-color;
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 30px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -10px;
+		width: 20px;
+		height: 1px;
+		background-color: $main-color;
+	}
+}
+.interview__img {
+	width: 150px;
+	height: 180px;
+	margin: 0 auto 15px auto;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.interview__text {
+
+	font-weight: 700;
+	line-height: 22px;
+	span {
+		display: block;
+		max-width: 220px;
+		margin: 0 auto;
+		font-size: 14px;
+	}
+}
+.news__item-big {
+	float: left;
+	position: relative;
+	display: block;
+	min-height: 340px;
+	width: 558px;
+	margin: 20px 9px;
+	box-shadow: 0 0 20px 0 $shadow;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #111;
+	iframe {
+		width: 100%;
+		height: 345px;
+		border-radius: 10px;
+		margin: 0;
+		border: none;
+	}
+	transition: box-shadow .5s ease;
+	&:hover {
+		box-shadow: 0 0 30px 5px darken($shadow, 20%);
+	}
+}
+.news__item-big-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 10px;
+	img {
+		
+		width: 100%;
+		height: 340px;
+		border-radius: 10px;
+	}
+}
+.news__item-big-category {
+
+	position: relative;
+	padding: 55px 0 0 0;
+	margin: 0 0 50px 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		width: 20px;
+		height: 1px;
+		margin-left: -10px;
+		background-color: #fff;
+	}
+}
+.news__item-big-title {
+	color: #fff;
+	margin: 0 0 40px 0;
+	h4 {
+		padding: 0 100px;
+		margin: 0 0 20px 0;
+		font-size: 30px;
+		line-height: 36px;
+		text-transform: none;
+		font-weight: 800;
+	}
+	p {
+		padding: 0 100px;
+		margin: 0;
+		font-style: italic;
+		font-size: 13px;
+		line-height: 22px;
+	}
+}
+.news__item-big-comment {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 20px;
+	color: #fff;
+}
+.news__item-big-date {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 10px;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+.news__btn {
+	text-align: center;
+	a {
+		display: inline-block;
+		vertical-align: top;
+		padding: 17px 25px;
+		color:#fff;
+		background-color: $main-color;
+		text-decoration: none;
+		font-weight: 700;
+		border-radius: 30px;
+		font-size: 14px;
+		box-shadow: 0 10px 40px -10px $main-color;
+		transition: opacity .5s ease;
+		&:hover, &:active, &:focus {
+			opacity: .8;
+		}
+	}
+}

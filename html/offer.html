@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>LOVIO</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	
+	<!--[if (lte IE 9)]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="main-header catalog_bg">
+		<div class="main-header__wrapper">
+			<div class="main-header__top-line">
+				<a class="main-header__logo" href="index.html" ><img src="img/logo.png" alt="#"></a>
+				<div class="main-header__links">
+					<a href="#">Новости</a>
+					<a href="#">Как это работает?</a>
+				</div>
+				<div class="main-header__registration">
+					<a class="main-header__registration-reg popup-with-move-anim" href="#registration">Регистрация</a>
+					<a class="main-header__registration-log popup-with-move-anim" href="#login">Вход</a>
+					<form class="search">
+						<input type="search" name="search" placeholder="Поиск" autofocus>
+					</form>
+					<a class="main-header__registration-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<form class="search-route">
+				<div class="search-route__title">
+					<h1>Поиск маршрута</h1>
+				</div>
+				<label class="search-route__whence">
+					<input  type="text" placeholder="Откуда">
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+				</label>
+				<label  class="search-route__where">
+					<input type="text" placeholder="Куда">
+				</label>
+				<button type="submit">Найти</button>
+			</form>
+			<div class="button-box">
+				<a class="button-box__send active" href="#">Отправка груза<i></i></a>
+				<a class="button-box__carry" href="#">Перевозка груза<i></i></a>
+			</div>
+		</div>
+	</header>
+	<div class="main-offer">
+		<div class="main-offer__wrapper">
+			<aside class="main-offer__aside">
+				<div class="main-offer__price">
+					<span class="main-offer__price-number green">270 руб.</span> 
+					<span class="main-offer__price-title">За место</span>
+				</div>
+				<div class="main-offer__plases">
+					<span class="main-offer__plases-number">3</span>
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<span class="main-offer__plases-title">Остальсь мест</span>
+				</div>
+				<div class="main-offer__passenger">
+					<span class="main-offer__passenger-title">Пассажиры в этой поездке</span>
+					<div class="main-offer__passenger-items">
+						<i class="fa fa-male" aria-hidden="true"></i>
+						<i class="fa fa-female" aria-hidden="true"></i>
+						<i class="fa fa-male" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="main-offer__driver">
+					<div class="main-offer__driver-title">
+						<span>Водитель</span>
+					</div>
+					<div class="main-offer__driver-box">
+						<div class="main-offer__driver-img">
+							<img src="img/carry-box-img-1.jpg" alt="#">
+							<span>4</span>
+						</div>
+						<div class="main-offer__driver-name">
+							<h3>Кирилл Ш</h3>
+							<span>18 лет</span>
+						</div>
+					</div>
+					<div class="main-offer__driver-hobbies">
+						<img src="img/hobbies-img-1.png" alt="#">
+						<img src="img/hobbies-img-2.png" alt="#">
+						<img src="img/hobbies-img-3.png" alt="#">
+					</div>
+					<div class="main-offer__driver-list">
+						<ul>
+							<li>
+								<b>Опыт: </b><span>Эксперт</span>
+							</li>
+							<li>
+								<b>Рейтинг: </b><span>5.0</span>
+							</li>
+							<li>
+								<b>Номер телефона: </b><span>подтверждён </span><a href="#">(показать)</a>
+							</li>
+							<li>
+								<b>Email: </b><span>подтверждён </span><a href="#">(показать)</a>
+							</li>
+						</ul>
+					</div>
+					<div class="main-offer__auto">
+						<div class="main-offer__auto-title">
+							<span>Мой автомобиль:</span>
+						</div>
+						<div class="main-offer__auto-icon">
+							
+						</div>
+						<div class="main-offer__auto-model">
+							<span> Toyota Rav4 ii</span>
+						</div>
+						<div class="main-offer__auto-rating">
+							<div class="main-offer__auto-rating-item-yellow">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="main-offer__auto-rating-item-yellow">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="main-offer__auto-rating-item-yellow">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="main-offer__auto-rating-item-yellow">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<div class="main-offer__auto-rating-item-gray">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="main-offer__auto-color">
+							<span class="main-offer__auto-color-title">Цвет:</span>
+							<span class="main-offer__auto-color-value">чёрный</span>
+						</div>
+					</div>
+					<div class="main-offer__reviews">
+						<div class="main-offer__reviews-title">
+							<span>7 отзывов</span>
+						</div>
+						<div class="main-offer__reviews-item">
+							<div class="main-offer__reviews-item-img">
+								<img src="img/reviews-img-1.jpg" alt="#">
+							</div>
+							<div class="main-offer__reviews-item-title">
+								<div class="main-offer__reviews-item-title-name">
+									<span>валентин марченко</span>
+								</div>
+								<div class="main-offer__reviews-item-title-evaluation">
+									<span>отлично</span>
+								</div>
+							</div>
+							<div class="main-offer__reviews-item-text">
+								<p>
+									While Cameron has had a great night, I suspect his problems in some way have only just begun.
+								</p>
+							</div>
+						</div>
+						<div class="main-offer__reviews-item">
+							<div class="main-offer__reviews-item-img">
+								<img src="img/reviews-img-1.jpg" alt="#">
+							</div>
+							<div class="main-offer__reviews-item-title">
+								<div class="main-offer__reviews-item-title-name">
+									<span>валентин марченко</span>
+								</div>
+								<div class="main-offer__reviews-item-title-evaluation">
+									<span>отлично</span>
+								</div>
+							</div>
+							<div class="main-offer__reviews-item-text">
+								<p>
+									While Cameron has had a great night, I suspect his problems in some way have only just begun.
+								</p>
+							</div>
+						</div>
+						<div class="main-offer__reviews-btn">
+							<a href="#">Смотреть все отзывы</a>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="offer">
+				<div class="offer__wrapper">
+					<div class="offer__title">
+						<div class="offer__title-route">
+							<span class="offer__title-route-from">Иваново</span>
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+							<span class="offer__title-route-to">Москва</span>
+						</div>
+						<div class="offer__title-link"><a href="#">Посмотреть маршрут</a></div>
+					</div>
+					<div class="offer__plase-from">
+						<span class="offer__plase-from-title">Место отправления <i class="fa fa-map-marker" aria-hidden="true"></i></span>
+						<span class="offer__plase-from-vulue">Иваново, Ивановская область</span>
+					</div>
+					<div class="offer__plase-to">
+						<span class="offer__plase-to-title">Место отправления <i class="fa fa-map-marker" aria-hidden="true"></i></span>
+						<span class="offer__plase-to-vulue">Балашиха, Московская область</span>
+					</div>
+					<div class="offer__date">
+						<span class="offer__date-title">Дата</span>
+						<span class="offer__date-value">Сегодня - 16:00</span>
+					</div>
+					<div class="offer__detail">
+						<div class="offer__detail-title">
+							<span>Детали</span>
+						</div>
+						<div class="offer__detail-box">
+							<div class="offer__detail-time">
+								<i class="fa fa-archive" aria-hidden="true"></i>
+								<span>Отправление точно вовремя</span>
+							</div>
+							<div class="offer__detail-baggage">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+								<span>Средний (дорожная сумка)</span>
+							</div>
+							<div class="offer__detail-time-2">
+								<i class="fa fa-clock-o" aria-hidden="true"></i>
+								<span>В пределах 15 мин</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="offer__comment">
+						<div class="offer__comment-img">
+							<img src="img/carry-box-img-3.jpg" alt="#">
+						</div>
+						<div class="offer__comment-name">
+							<span>Николай С</span>
+						</div>
+						<div class="offer__comment-text">
+							<p>
+								Водитель <b>Николай С</b> ещё не оставил комментарий к этой поездке.
+							</p>
+						</div>
+					</div>
+					<div class="offer__questions">
+						<div class="offer__questions-title">
+							<span>Задать вопрос водителю</span>
+						</div>
+						<div class="offer__questions-box">
+							<div class="offer__questions-item">
+								<div class="offer__questions-item-img"><img src="img/reviews-img-1.jpg" alt="#"></div>
+								<div class="offer__questions-item-title">
+									<span class="offer__questions-item-name">Илья К</span>
+									<span class="offer__questions-item-route">(Иваново <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Балашиха)</span>
+								</div>
+								<div class="offer__questions-item-text">
+									<p>
+										До Новокосино довезете ?
+									</p>
+								</div>
+								<div class="offer__questions-item-time">
+									<span>вчера - 18:27</span>
+								</div>
+							</div>
+							<div class="offer__questions-item">
+								<div class="offer__questions-item-img"><img src="img/reviews-img-1.jpg" alt="#"></div>
+								<div class="offer__questions-item-title">
+									<span class="offer__questions-item-name">Илья К</span>
+									<span class="offer__questions-item-route">(Иваново <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Балашиха)</span>
+								</div>
+								<div class="offer__questions-item-text">
+									<p>
+										Точней даже до поворота на реутов
+									</p>
+								</div>
+								<div class="offer__questions-item-time">
+									<span>вчера - 18:27</span>
+								</div>
+							</div>
+							<div class="offer__questions-item">
+								<div class="offer__questions-item-img"><img src="img/reviews-img-1.jpg" alt="#"></div>
+								<div class="offer__questions-item-title">
+									<span class="offer__questions-item-name">Мария П</span>
+									<span class="offer__questions-item-route">(Иваново <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Балашиха)</span>
+								</div>
+								<div class="offer__questions-item-text">
+									<p>
+										Добрый день. До метро новокасино доезжаете?
+									</p>
+								</div>
+								<div class="offer__questions-item-time">
+									<span>вчера - 18:27</span>
+								</div>
+							</div>
+							<div class="offer__questions-item">
+								<div class="offer__questions-item-img"><img src="img/reviews-img-1.jpg" alt="#"></div>
+								<div class="offer__questions-item-title">
+									<span class="offer__questions-item-name">Илья К</span>
+									<span class="offer__questions-item-route">(Иваново <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Балашиха)</span>
+								</div>
+								<div class="offer__questions-item-text">
+									<p>
+										До Новокосино довезете ?
+									</p>
+								</div>
+								<div class="offer__questions-item-time">
+									<span>вчера - 18:27</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<form class="offer__form">
+						<textarea name="offer__form" id="offer__form" cols="30" rows="10"></textarea>
+						<div>
+							<button type="submit">Задать вопрос</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<footer class="main-footer">
+		<div class="main-footer__wrapper">
+			<nav class="main-footer__menu">
+				<ul>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a class="main-footer__logo" href="index.html"><img src="img/logo.png" alt="#"></a></li>
+					<li><a href="#">Поиск маршрута</a></li>
+					<li><a href="#">Рейтинг водителей</a></li>
+					<li><a href="#">Условия соглашения</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-footer__bot-line">
+			<div class="main-footer__wrapper">
+				<div class="main-footer__social">
+					<a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="g" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</div>
+				<div class="main-footer__copy">
+					<span>© 2016  Lovio, All Rights Reserved</span>
+				</div>
+				<div class="main-footer__created">
+					<a href="#"><img src="img/created-img.png" alt="#"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="hidden">
+		<form id="login" class="login-form zoom-anim-dialog" >
+			<div class="login-form__title">
+				<span>Войти на сайт</span>
+			</div>
+			<label class="login-form__log">
+				<input type="text" placeholder="Логин" required>
+			</label>
+			<label class="login-form__pass">
+				<input type="password" placeholder="Пароль" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<div class="login-form__break">
+				<span>или</span>
+			</div>
+			<div class="login-form__links">
+				<a class="login-form__links-fb" href="#">Facebook</a>
+				<a class="login-form__links-vk" href="#">вКОНТАКТЕ</a>
+				<a class="login-form__links-tw" href="#">TWITTER</a>
+				<a class="login-form__links-g" href="#">google +</a>
+				<a class="login-form__links-mail" href="#">Войти через e-mail</a>
+				<a class="login-form__links-pass" href="#">Забыли пароль?</a>
+			</div>
+
+		</form>
+		<form id="registration" class="zoom-anim-dialog registration-form" >
+			<div class="registration-form__title">
+				<span>Регистрация</span>
+			</div>
+			<label class="registration-form__name">
+				<input type="text" placeholder="Имя" required>
+			</label>
+			<label class="registration-form__mail">
+				<input type="mail" placeholder="E-mail" required>
+				<i>@</i>
+			</label>
+			<label class="registration-form__password">
+				<input type="password" placeholder="Пароль (мин 8 символов)" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<label class="registration-form__password">
+				<input type="password" placeholder="Подтверждение пароля" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<div class="registration-form__links">
+				<button class="registration-form-button">Зарегестрироваться</button>
+			</div>
+
+		</form>
+	</div>
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

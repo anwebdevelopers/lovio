@@ -1,0 +1,485 @@
+.main-transit__steps-1 {
+	position: relative;
+	padding: 10px 0 20px 0;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 4px;
+		width: 160px;
+		background-color: $main-color;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 4px;
+		width: 380px;
+		background-color: #ccc;
+	}
+}
+.main-transit__steps-1 .main-transit__step-2 {
+	&:after {
+		background-color: #ccc;
+	}
+}
+.transit__periodicity-title {
+	padding: 0 0 45px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #535353;
+}
+.transit__periodicity-box {
+	@extend .clearfix;
+	margin: 0 0 50px 0;
+}
+.transit__periodicity-one {
+	position: relative;
+	float: left;
+	font-size: 14px;
+	color: #888;
+	font-weight: 600;
+	input {
+		display: none;
+	}
+	label {
+		display: block;
+		position: relative;
+		width: 200px;
+		padding: 0 0 0 30px;
+	}
+	
+}
+label[for="periodicity-one"] {
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 8px;
+		height: 8px;
+		background-color: #fff;
+		border: 4px solid #fff;
+		box-shadow: 0 0 0 2px #ccc;
+		border-radius: 50%;
+	}
+}
+
+.transit__periodicity-often {
+	float: right;
+	position: relative;
+	font-size: 14px;
+	color: #888;
+	font-weight: 600;
+	position: relative;
+	
+	input {
+		display: none;
+	}
+	label {
+		display: block;
+		position: relative;
+		width: 200px;
+		padding: 0 0 0 30px;
+	}
+}
+label[for="periodicity-often"] {
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 8px;
+		height: 8px;
+		background-color: #fff;
+		border: 4px solid #fff;
+		box-shadow: 0 0 0 2px #ccc;
+		border-radius: 50%;
+	}
+}
+#periodicity-one:checked ~ label[for="periodicity-one"]::before,
+#periodicity-often:checked ~ label[for="periodicity-often"]::before {
+	background-color: $main-color;
+	box-shadow: 0 0 0 2px $main-color;
+}
+
+.transit__points-title {
+	display: block;
+	padding: 0 0 45px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #535353;
+}
+.transit__points-item-start,
+.transit__points-item-finish {
+	display: block;
+	margin: 0 0 15px 0;
+	span {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 14px;
+		color: #888;
+		font-weight: 600;
+		i {
+			font-size: 26px;
+			margin-right: 15px;
+			color: #dc4c4c;
+			font-weight: 600;
+		}
+	}
+	input {
+		display: block;
+		width: 383px;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+		color: $main-color;
+		border: 1px solid #ccc;
+		text-indent: 10px;
+		border-radius: 2px;
+		outline: none;
+	}
+	input::-webkit-input-placeholder {color:$main-color;}
+	input::-moz-placeholder          {color:$main-color;}/* Firefox 19+ */
+	input:-moz-placeholder           {color:$main-color;}/* Firefox 18- */
+	input:-ms-input-placeholder      {color:$main-color;}
+}
+.transit__points-item-finish {
+	span {
+		i {
+			color: #41c5a6;
+		}
+	}
+}
+
+#roads {
+	display: none;
+}
+label[for="roads"] {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	color: #535353;
+	padding: 0 0 15px 30px;
+	margin: 10px 0 30px 0;
+	i {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		line-height: 18px;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		color: $main-color;
+	}
+	&:after {
+	    content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    height: 1px;
+	    background-color: #eee;
+	}
+}
+#roads:checked ~ label[for="roads"] i {
+	color: #fff;
+}
+.transit__gaps-title {
+	display: block;
+	padding: 0 0 20px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #535353;
+}
+.transit__gaps-text {
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: #888;
+}
+.transit__gaps-box {
+	@extend .clearfix;
+	padding: 5px 0 0 0;
+	margin: 0 0 70px 0;
+}
+.transit__gaps-box-input {
+	float: left;
+	width: 390px;
+
+	label {
+		position: relative;
+		display: block;
+		i {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 26px;
+			font-weight: 600;
+			color: #e7af44;
+			padding: 5px 0 0 0;
+			margin: 0 10px 0 0;
+		}
+		input {
+			display: inline-block;
+			width: 353px;
+			height: 36px;
+			vertical-align: top;
+			line-height: 38px;
+			font-size: 14px;
+			border: 1px solid #ccc;
+			border-radius: 2px;
+			text-indent: 10px;
+			outline: none;
+		}
+	}
+	button {
+		padding: 10px 0 0 30px;
+		font-size: 14px;
+		font-weight: 600;
+		border: none;
+		outline: none;
+		background-color: #fff;
+		color: $main-color;
+	}
+}
+.transit__gaps-box-towns {
+	float: right;
+	width: 225px;
+}
+.transit__gaps-box-towns-title {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	color: #888;
+}
+.transit__gaps-box-towns-item {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 10px 10px 0;
+	padding: 8px 12px;
+	border: 2px solid #e7af44;
+	border-radius: 18px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #e7af44;
+	cursor: pointer;
+}
+.transit__datetime {
+	position: relative;
+}
+.transit__datetime-title {
+	display: block;
+	padding: 0 0 60px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #535353;
+}
+.transit__datetime-check {
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+#datetime-check {
+	display: none;
+}
+label[for="datetime-check"] {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	color: #535353;
+	padding: 0 0 0 30px;
+	i {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		line-height: 18px;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		color: $main-color;
+	}
+}
+#datetime-check:checked ~ label[for="datetime-check"] i {
+	color: #fff;
+}
+.transit__datetime-start-title {
+	display: block;
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: #888;
+}
+.transit__datetime-start-box {
+	margin: 0 0 20px 0;
+}
+.transit__datetime-start-date,
+.transit__datetime-start-hour,
+.transit__datetime-start-minute {
+	display: inline-block;
+	vertical-align: top;
+	input, select {
+		height: 36px;
+		line-height: 36px;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		outline: none;
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+}
+.transit__datetime-start-date {
+	position: relative;
+	margin-right: 15px;
+	input {
+		width: 288px;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		text-indent: 40px;
+	}
+	i {
+		position: absolute;
+		left: 15px;
+		top: 10px;
+		font-size: 18px;
+		color: #888;
+	}
+	input::-webkit-input-placeholder {color:#535353;}
+	input::-moz-placeholder          {color:#535353;}/* Firefox 19+ */
+	input:-moz-placeholder           {color:#535353;}/* Firefox 18- */
+	input:-ms-input-placeholder      {color:#535353;}
+}
+.transit__datetime-start-hour,
+.transit__datetime-start-minute {
+	position: relative;
+	margin-right: 15px;
+	select {
+		width: 66px;
+		padding: 0 2px 0 10px;
+		font-size: 18px;
+		height: 38px;
+		cursor: pointer;
+		background-color: #fff;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		outline: none;
+	}
+	i {
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		width: 22px;
+		height: 36px;
+		line-height: 36px;
+		background-color: #fff;
+		color: #888;
+		font-size: 16px;
+		text-align: center;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 3px;
+			width: 1px;
+			height: 30px;
+			background-color: #ccc;
+		}
+	}
+}
+.transit__datetime-finish-title {
+	display: block;
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: #888;
+}
+.transit__datetime-finish-box {
+	margin: 0 0 30px 0;
+}
+.transit__datetime-finish-date,
+.transit__datetime-finish-hour,
+.transit__datetime-finish-minute {
+	display: inline-block;
+	vertical-align: top;
+	input, select {
+		height: 36px;
+		line-height: 36px;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		outline: none;
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+}
+.transit__datetime-finish-date {
+	position: relative;
+	margin-right: 15px;
+	input {
+		width: 288px;
+		
+		font-size: 14px;
+		text-indent: 40px;
+		font-family: Arial, sans-serif;
+	}
+	i {
+		position: absolute;
+		left: 15px;
+		top: 10px;
+		font-size: 18px;
+		color: #888;
+
+	}
+	input::-webkit-input-placeholder {color:#535353;}
+	input::-moz-placeholder          {color:#535353;}/* Firefox 19+ */
+	input:-moz-placeholder           {color:#535353;}/* Firefox 18- */
+	input:-ms-input-placeholder      {color:#535353;}
+}
+.transit__datetime-finish-hour,
+.transit__datetime-finish-minute {
+	position: relative;
+	margin-right: 15px;
+	select {
+
+		width: 66px;
+		padding: 0 2px 0 10px;
+		font-size: 18px;
+		height: 38px;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		background-color: #fff;
+		outline: none;
+	}
+	i {
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		width: 22px;
+		height: 36px;
+		line-height: 36px;
+		background-color: #fff;
+		color: #888;
+		font-size: 16px;
+		text-align: center;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 3px;
+			width: 1px;
+			height: 30px;
+			background-color: #ccc;
+		}
+	}
+}

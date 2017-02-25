@@ -1,0 +1,160 @@
+.main-header_about {
+	padding: 0 0 490px 0;
+	background-image: url(../img/about-bg.jpg);
+}
+.main-header__top-line_bg {
+	padding-top: 20px;
+	
+	background-color: #fff;
+	
+	a {
+		color: #111;
+	}
+}
+
+.about-main {
+	padding: 60px 0 0 0;
+}
+.about-main__wrapper {
+	@extend .container;
+}
+.about-project, .about-history, .command {
+	padding: 0 0 100px 35px;
+}
+.about-project__title {
+	position: relative;
+	float: left;
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+		color: #535353;
+		text-transform: none;
+		font-weight: 800;
+		margin: 0;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -20px;
+		width: 85px;
+		height: 2px;
+		background-color: $main-color;
+	}
+}
+.about-project__text, .about-history__text {
+	padding: 0 85px 0 265px;
+	p {
+		margin: 0 0 25px 0;
+		font-size: 16px;
+		line-height: 34px;
+	}
+}
+.about-history__title, .command__title {
+	position: relative;
+	float: left;
+	h2 {
+		font-size: 30px;
+		line-height: 30px;
+		color: #535353;
+		text-transform: none;
+		font-weight: 800;
+		margin: 0;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -20px;
+		width: 85px;
+		height: 2px;
+		background-color: $main-color;
+	}
+}
+.command__director {
+	@extend .clearfix;
+	padding: 30px 0 0 265px;
+	margin: 0 0 80px 0;
+	position: relative;
+}
+.command__director-img {
+	float: left;
+	position: relative;
+	width: 410px;
+	height: 410px;
+	margin: 0 20px 0 0;
+	border: 8px solid $main-color;
+	img {
+		position: absolute;
+		left: 0;
+		bottom: -50px;
+	}
+}
+.command__director-name {
+	position: absolute;
+	left: 570px;
+	top: 80px;
+	background-color: #fff;
+	span {
+		display: block;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 700;
+		color: $accent-color;
+	}
+	b {
+		display: block;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 600;
+	}
+}
+.command__director-text {
+	position: relative;
+	padding: 190px 50px 0 0;
+	i {
+		position: absolute;
+		top: 130px;
+		right: 170px;
+		font-size: 36px;
+		color: $accent-color;
+	}
+	p {
+		margin: 0;
+		font-size: 14px;
+		text-align: center;
+	}
+}
+.command__item-box {
+	clear: both;
+}
+.command__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 80px 0 0 ;
+	img {
+		width: 176px;
+		height: 176px;
+		border: 4px solid $main-color;
+	}
+	span {
+		position: absolute;
+		left: 65px;
+		top: 125px;
+		display: block;
+		width: 170px;
+		padding: 5px;
+		background-color: #fff;
+		color: $accent-color;
+		font-weight: 700;
+		font-size: 12px;
+		b {
+			display: block;
+			font-size: 16px;
+			line-height: 22px;
+			color: #535353;
+			font-weight: 700;
+		}
+	}
+}

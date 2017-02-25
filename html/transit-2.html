@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>ALI WAY</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	<!--[if (lte IE 9)]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="main-header catalog_bg">
+		<div class="main-header__wrapper">
+			<div class="main-header__top-line">
+				<a class="main-header__logo" href="index.html" ><img src="img/logo.png" alt="#"></a>
+				<div class="main-header__links">
+					<a href="#">Новости</a>
+					<a href="#">Как это работает?</a>
+				</div>
+				<div class="main-header__registration">
+					<a class="main-header__registration-reg popup-with-move-anim" href="#registration">Регистрация</a>
+					<a class="main-header__registration-log popup-with-move-anim" href="#login">Вход</a>
+					<form class="search">
+						<input type="search" name="search" placeholder="Поиск" autofocus>
+					</form>
+					<a class="main-header__registration-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<form class="search-route">
+				<div class="search-route__title">
+					<h1>Поиск маршрута</h1>
+				</div>
+				<label class="search-route__whence">
+					<input  type="text" placeholder="Откуда">
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+				</label>
+				<label  class="search-route__where">
+					<input type="text" placeholder="Куда">
+				</label>
+				<button type="submit">Найти</button>
+			</form>
+			<div class="button-box">
+				<a class="button-box__send active" href="#">Отправка груза<i></i></a>
+				<a class="button-box__carry" href="#">Перевозка груза<i></i></a>
+			</div>
+		</div>
+	</header>
+	<section class="main-transit">
+		<div class="main-transit__wrapper">
+			<div class="main-transit__top-line">
+				<div class="main-transit__title">
+					<h2>Предложить междугороднюю перевозку (если вы водитель)</h2>
+				</div>
+				<div class="main-transit__steps">
+					<span class="main-transit__step-1">Моя перевозка</span>
+					<span class="main-transit__step-2">Детали перевозки</span>
+				</div>
+			</div>
+
+			<aside class="main-transit__aside">
+				<div class="main-transit__aside-title">
+					<span>Маршрут</span>
+				</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1125407.361466692!2d38.18356956806931!3d56.57001098482338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!3m2!1d55.755826!2d37.6173!4m5!1s0x414d1423afe9a7c3%3A0xe25ab9c4547ae2e!2z0JjQstCw0L3QvtCy0L4!3m2!1d57.0050671!2d40.9766453!5e0!3m2!1sru!2sru!4v1466249519271" height="380" allowfullscreen></iframe>
+				</div>
+			</aside>
+			<div class="transit">
+				<div class="transit__wrapper">
+					<form class="transit__form">
+						<div class="transit__marks">
+							<div class="transit__marks-title">
+								<span>Цена за место</span>
+							</div>
+							<div class="transit__marks-box">
+								<div class="transit__marks-item-gap">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span class="transit__marks-item-from">
+										<span>Иваново</span>
+									</span>
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span class="transit__marks-item-to">
+										<span>Гаврилов-Ям</span>
+									</span>
+									<div class="transit__marks-item-button">
+										<input class="green" type="text" value="100">
+										<span class="transit__marks-item-button-rub green">p.</span>
+										<span class="transit__marks-item-button-plus"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
+										<span class="transit__marks-item-button-minus"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="transit__marks-item-gap">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span class="transit__marks-item-from">
+										<span>Гаврилов-Ям</span>
+									</span>
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span class="transit__marks-item-to">
+										<span>Москва</span>
+									</span>
+									<div class="transit__marks-item-button">
+										<input class="orange" type="text" value="200">
+										<span class="transit__marks-item-button-rub orange">p.</span>
+										<span class="transit__marks-item-button-plus"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
+										<span class="transit__marks-item-button-minus"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="transit__marks-item-full">
+									<span class="transit__marks-item-from">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<span>Иваново</span>
+									</span>
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span class="transit__marks-item-to">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<span>Москва</span>
+									</span>
+									<div class="transit__marks-item-button">
+										<input class="red" type="text" value="350">
+										<span class="transit__marks-item-button-rub red">p.</span>
+										<span class="transit__marks-item-button-plus"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
+										<span class="transit__marks-item-button-minus"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="transit__loaded">
+								<span class="transit__loaded-title">Загруженность:</span>
+								<div class="transit__loaded-box">	<button class="transit__loaded-button-button" type="button">
+										<span>Заполненная</span>
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+									</button>
+									<ul>
+										<li>Заполненная</li>
+										<li>Заполненная</li>
+										<li>Заполненная</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="transit__detail">
+							<div class="transit__detail-title">
+								<span>Подробнее о перевозке</span>
+							</div>
+							<span>Предоставьте пассажирам больше информации о перевозке</span>
+							<textarea rows="10"></textarea>
+							<span>Не указывайте ваши контактные данные (номер телефона, email и т.п.) – они уже есть в вашем профиле. (<a href="#">Ознакомьтесь с правилами</a>)</span>
+							<input id="public" type="checkbox">
+							<label for="public"><i class="fa fa-check" aria-hidden="true"></i>Опубликовать этот же комментарий для перевозки обратно</label>
+							<label class="transit__detail-size">
+								<span>Допустимый размер багажа:</span>
+								<select>
+									<option> </option>
+									<option> </option>
+									<option> </option>
+								</select>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</label>
+							<label class="transit__detail-time">
+								<span>Я буду выезжать:</span>
+								<select>
+									<option> </option>
+									<option> </option>
+									<option> </option>
+								</select>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</label>
+							<label class="transit__detail-route">
+								<span>Могу отклон. от маршрута:</span>
+								<select>
+									<option> </option>
+									<option> </option>
+									<option> </option>
+								</select>
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</label>
+							<input id="conditions" type="checkbox">
+							<label for="conditions"><i class="fa fa-check" aria-hidden="true"></i>Я прочитал и принял <a href="#">Условия использования</a> и подтверждаю, что мне исполнилось 18 лет и у меня есть действующие водительские права и автомобильная страховка.</label>
+
+						</div>
+						<div class="transit__button-box">
+							<a href="transit-1.html">Назад</a>
+							<button type="submit">Опубликовать</button>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<footer class="main-footer">
+		<div class="main-footer__wrapper">
+			<nav class="main-footer__menu">
+				<ul>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="#">Как это работает?</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a class="main-footer__logo" href="index.html"><img src="img/logo.png" alt="#"></a></li>
+					<li><a href="#">Поиск маршрута</a></li>
+					<li><a href="#">Рейтинг водителей</a></li>
+					<li><a href="#">Условия соглашения</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-footer__bot-line">
+			<div class="main-footer__wrapper">
+				<div class="main-footer__social">
+					<a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="g" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</div>
+				<div class="main-footer__copy">
+					<span>© 2016  Lovio, All Rights Reserved</span>
+				</div>
+				<div class="main-footer__created">
+					<a href="#"><img src="img/created-img.png" alt="#"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="hidden">
+		<form id="login" class="login-form zoom-anim-dialog" >
+			<div class="login-form__title">
+				<span>Войти на сайт</span>
+			</div>
+			<label class="login-form__log">
+				<input type="text" placeholder="Логин" required>
+			</label>
+			<label class="login-form__pass">
+				<input type="password" placeholder="Пароль" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<div class="login-form__break">
+				<span>или</span>
+			</div>
+			<div class="login-form__links">
+				<a class="login-form__links-fb" href="#">Facebook</a>
+				<a class="login-form__links-vk" href="#">вКОНТАКТЕ</a>
+				<a class="login-form__links-tw" href="#">TWITTER</a>
+				<a class="login-form__links-g" href="#">google +</a>
+				<a class="login-form__links-mail" href="#">Войти через e-mail</a>
+				<a class="login-form__links-pass" href="#">Забыли пароль?</a>
+			</div>
+
+		</form>
+		<form id="registration" class="zoom-anim-dialog registration-form" >
+			<div class="registration-form__title">
+				<span>Регистрация</span>
+			</div>
+			<label class="registration-form__name">
+				<input type="text" placeholder="Имя" required>
+			</label>
+			<label class="registration-form__mail">
+				<input type="mail" placeholder="E-mail" required>
+				<i>@</i>
+			</label>
+			<label class="registration-form__password">
+				<input type="password" placeholder="Пароль (мин 8 символов)" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<label class="registration-form__password">
+				<input type="password" placeholder="Подтверждение пароля" required>
+				<i class="fa fa-lock" aria-hidden="true"></i>
+			</label>
+			<div class="registration-form__links">
+				<button class="registration-form-button">Зарегестрироваться</button>
+			</div>
+
+		</form>
+	</div>
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

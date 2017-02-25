@@ -1,0 +1,109 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/fonts.scss";
+@import "components/normalize.scss";
+//@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+	color: #111;
+	background-color: #fff;
+}
+
+a {
+	outline: none !important;
+}
+strong, b {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, .btn {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/advantages.scss";
+@import "components/ads.scss";
+@import "components/starting.scss";
+@import "components/widgets.scss";
+@import "components/bottom-line.scss";
+@import "components/footer.scss";
+//about page
+@import "components/about.scss";
+//profile page
+@import "components/profile.scss";
+//news page
+@import "components/news.scss";
+//article page
+@import "components/article.scss";
+//catalog page
+@import "components/filter.scss";
+@import "components/catalog.scss";
+//offer page
+@import "components/offer-aside.scss";
+@import "components/offer.scss";
+//transit page
+@import "components/transit-1.scss";
+@import "components/transit-2.scss";
+//personal page
+@import "components/personal.scss";
+//popup
+@import "components/popup.scss";
+@import "components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+@import "html/libs/animate/animate.sass";
+//@import "html/libs/superfish/dist/css/superfish";
+@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+@import "html/libs/magnific-popup/dist/magnific-popup";

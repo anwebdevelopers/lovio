@@ -1,0 +1,59 @@
+.button-icon-2-gray, .button-icon-2-white, .steps-icon-1, .steps-icon-2, .steps-icon-3, .button-icon-1-gray, .button-icon-1-white{
+	background: url(sprites.png) no-repeat;
+}
+
+.
+
+.steps-icon-1{
+	background-position: -100.98516845703125px -20.98681640625px ;
+	width: 56px;
+	height: 56px;
+}
+
+.steps-icon-2{
+	background-position: -171.9898681640625px -22.99169921875px ;
+	width: 56px;
+	height: 56px;
+}
+
+.steps-icon-3{
+	background-position: -247.9857177734375px -22.969024658203125px ;
+	width: 54px;
+	height: 54px;
+}
+
+.button-icon-1-gray{
+	background-position: -313.99603271484375px -17.9951171875px ;
+	width: 26px;
+	height: 26px;
+}
+
+.button-icon-2-gray{
+	background-position: -366.99041748046875px -66.97955322265625px ;
+	width: 44px;
+	height: 18px;
+}
+
+.button-icon-2-white{
+	background-position: -306.98663330078125px -65.96923828125px ;
+	width: 44px;
+	height: 18px;
+}
+
+.button-icon-1-white{
+	background-position: -362.96746826171875px -13.94464111328125px ;
+	width: 26px;
+	height: 26px;
+}
+.catalog-icon-big{
+	background-position: -428.9996337890625px -59.984771728515625px ;
+	width: 34px;
+	height: 18px;
+}
+
+.catalog-icon-small{
+	background-position: -425.0174560546875px -16.99920654296875px ;
+	width: 44px;
+	height: 18px;
+}
+
